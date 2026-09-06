@@ -1,0 +1,643 @@
+```css
+/* =========================================
+   MUTENDI CLUBS
+   GREEN, WHITE & LIGHT GOLD THEME
+   ========================================= */
+
+
+/* ================= GENERAL ================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #3A8D5D;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-bottom: 5px solid #E6D28A;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo h1 {
+    font-size: 26px;
+}
+
+.logo p {
+    font-size: 13px;
+}
+
+
+/* School badge */
+
+.school-badge {
+    width: 55px;
+    height: 55px;
+
+    background: #E6D28A;
+    color: #276B45;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    border: 3px solid white;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #E6D28A;
+}
+
+
+/* ================= HOME / HERO ================= */
+
+.hero {
+    min-height: 430px;
+
+    background: linear-gradient(
+        rgba(58, 141, 93, 0.94),
+        rgba(58, 141, 93, 0.94)
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px 20px;
+
+    border-bottom: 8px solid #E6D28A;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+
+/* Explore Clubs button */
+
+.button {
+    display: inline-block;
+
+    background: #E6D28A;
+    color: #276B45;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #F2E5AE;
+}
+
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 60px 7%;
+}
+
+section h2 {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+    color: #276B45;
+}
+
+.section-intro,
+.introduction p {
+    text-align: center;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.introduction {
+    background: white;
+
+    border-bottom: 1px solid #E6D28A;
+}
+
+.introduction p {
+    margin-bottom: 10px;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.statistics {
+    background: #EAF5EE;
+}
+
+.stats-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    max-width: 1100px;
+
+    margin: 30px auto 0;
+}
+
+.stat-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    border-radius: 10px;
+
+    border-top: 5px solid #E6D28A;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.stat-card h3 {
+    font-size: 32px;
+
+    color: #3A8D5D;
+}
+
+
+/* ================= CLUBS ================= */
+
+.clubs-section {
+    background: white;
+}
+
+.club-container {
+    max-width: 1200px;
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.club-card {
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 2px solid #E6D28A;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    transition: transform 0.2s;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #3A8D5D;
+}
+
+.club-icon {
+    font-size: 45px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.club-card h3 {
+    color: #276B45;
+
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+.club-card p {
+    margin-bottom: 15px;
+}
+
+.club-card ul {
+    margin-left: 20px;
+
+    margin-bottom: 15px;
+}
+
+.club-card li::marker {
+    color: #3A8D5D;
+}
+
+.members {
+    background: #EAF5EE;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+
+    border-left: 4px solid #E6D28A;
+}
+
+.club-card button {
+    width: 100%;
+
+    border: none;
+
+    padding: 12px;
+
+    background: #3A8D5D;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.club-card button:hover {
+    background: #276B45;
+}
+
+
+/* FREE Soccer membership */
+
+.free {
+    text-align: center;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+    color: #3A8D5D;
+
+    background: #EAF5EE;
+
+    padding: 8px;
+
+    border-radius: 5px;
+}
+
+
+/* ================= TIMETABLE ================= */
+
+.timetable-section {
+    background: #EAF5EE;
+}
+
+.timetable-section > p {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th {
+    background: #3A8D5D;
+
+    color: white;
+
+    padding: 14px;
+
+    border-bottom: 4px solid #E6D28A;
+}
+
+td {
+    padding: 13px;
+
+    text-align: center;
+
+    border: 1px solid #E6D28A;
+}
+
+tr:nth-child(even) {
+    background: #F7FBF8;
+}
+
+tr:hover {
+    background: #EAF5EE;
+}
+
+
+/* ================= SUBSCRIPTIONS ================= */
+
+.subscription-section {
+    background: white;
+}
+
+.fee-box {
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.fee-box > div {
+    background: #EAF5EE;
+
+    text-align: center;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    border: 2px solid #E6D28A;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.fee-box strong {
+    display: block;
+
+    font-size: 30px;
+
+    color: #3A8D5D;
+}
+
+.monthly-heading {
+    text-align: center;
+
+    margin: 40px 0 20px;
+
+    color: #276B45;
+}
+
+
+/* ================= JOIN FORM ================= */
+
+.join-section {
+    background: #EAF5EE;
+}
+
+form {
+    max-width: 600px;
+
+    margin: 30px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    border: 2px solid #E6D28A;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+form label {
+    display: block;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #276B45;
+}
+
+form input,
+form select {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: 1px solid #B9D5C2;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+
+    border: 2px solid #3A8D5D;
+}
+
+form button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    background: #3A8D5D;
+
+    color: white;
+
+    font-size: 17px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #276B45;
+}
+
+
+/* ================= SUCCESS MESSAGE ================= */
+
+.success-message {
+    max-width: 600px;
+
+    margin: 20px auto;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background: #EAF5EE;
+
+    color: #276B45;
+
+    border: 2px solid #E6D28A;
+
+    border-radius: 6px;
+
+    display: none;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #3A8D5D;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 6px solid #E6D28A;
+}
+
+footer h3 {
+    font-size: 25px;
+
+    color: #E6D28A;
+}
+
+.copyright {
+    margin-top: 20px;
+
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 850px) {
+
+    header {
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .club-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fee-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .stats-container,
+    .club-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+
+    table {
+        font-size: 13px;
+    }
+}
+```
